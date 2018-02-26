@@ -25,23 +25,23 @@
 			<property name="forceBigDecimals" value="false" />
 		</javaTypeResolver>
 
-		<javaModelGenerator targetPackage="com.erpnext.common"
+		<javaModelGenerator targetPackage="com.erpnext.common.setup.domain"
 			targetProject="src/main/java">
 			<property name="enableSubPackages" value="true" />
 		</javaModelGenerator>
 
-		<sqlMapGenerator targetPackage="com.erpnext.common"
+		<sqlMapGenerator targetPackage="com.erpnext.common.setup.mapper"
 			targetProject="src/main/java">
 			<property name="enableSubPackages" value="true" />
 		</sqlMapGenerator>
 
 		<javaClientGenerator type="XMLMAPPER"
-			targetPackage="com.erpnext.common" 
+			targetPackage="com.erpnext.common.setup.mapper" 
 			targetProject="src/main/java">
 			<property name="enableSubPackages" value="true" />
 		</javaClientGenerator>
 
-		<table tableName="common_area" domainObjectName="Area">
+		<table tableName="common_department_user_xref" domainObjectName="DepartmentUserXref">
 			
 		</table>
 
